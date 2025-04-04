@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@maxmind/geoip2-node": "^6.0.0",
+    "aws-sdk": "^2.1692.0"
+  }
+}

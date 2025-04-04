@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/analyze.ts", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/analyze", "dest": "api/analyze.ts" }
+  ],
+  "crons": [
+    {
+      "path": "/api/update-dbs",
+      "schedule": "0 3 * * 1" // Weekly updates on Monday 3AM UTC
+    }
+  ]
+}
